@@ -1,1 +1,0 @@
-Showcasing d3 with ReactJS
