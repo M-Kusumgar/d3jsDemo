@@ -12,7 +12,7 @@ const row = d => {
     return d
 }
 
-const useData = () => {
+const useMapData = () => {
     const [data, setData] = useState(null);
 
     useEffect(() => {
@@ -22,4 +22,4 @@ const useData = () => {
     return data
 }
 
-export default useData
+export default useMapData

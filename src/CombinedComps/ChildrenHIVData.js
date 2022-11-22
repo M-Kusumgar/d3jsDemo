@@ -1,7 +1,7 @@
 import '../App.css';
 import useWorldAtlas from '../Hooks/useWorldAtlas';
 import MapMarks from '../IndividualComps/MapMarks';
-import useData from '../Hooks/useData';
+import useMapData from '../Hooks/useMapData';
 import { max, interpolateYlOrRd, scaleSequentialSqrt } from 'd3';
 import useCountryCodes from '../Hooks/useCountryCodes';
 
@@ -11,7 +11,7 @@ const ChildrenHIVData = ({ selectedYear }) => {
     const height=500
 
     const map = useWorldAtlas()
-    const data = useData()
+    const data = useMapData()
     const countryCodes = useCountryCodes()
 
     if (!map || !data || !countryCodes) {

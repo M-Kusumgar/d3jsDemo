@@ -48,7 +48,7 @@ const App = () => {
         <Slider 
         min={1990}
         max={2020}
-        valueLabelDisplay="on"
+        valueLabelDisplay="auto"
         value={year}
         onChange={(e) => setYear(e.target.value)}
         />
